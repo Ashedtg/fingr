@@ -26,10 +26,17 @@ header {
   text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 4rem 2rem;
   background: #caf0f8;
+}
+
+.hero-content {
+  max-width: 500px;
 }
 
 .hero h1 {
@@ -46,19 +53,28 @@ header {
   border-radius: 5px;
 }
 
-section {
+.hero img {
+  max-width: 400px;
+}
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   padding: 2rem;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.feature-item {
+  text-align: center;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+.feature-item img {
+  width: 80px;
+  margin-bottom: 1rem;
 }
 
+/* Contact Section */
 form {
   display: flex;
   flex-direction: column;
